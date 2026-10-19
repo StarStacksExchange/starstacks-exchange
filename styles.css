@@ -6,22 +6,57 @@ main{position:relative;z-index:1;max-width:1080px;margin:auto;padding:0 24px}.he
 .network-section{padding:64px 0 44px;text-align:center}.section-label{font-size:9px}.network-section h2{font:500 25px 'Space Grotesk',sans-serif;letter-spacing:-.8px;margin:12px 0 23px}.network-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.network-tile{display:flex;align-items:center;gap:9px;min-width:0;padding:14px 12px;border:1px solid #272a3a;border-radius:14px;background:#131520;color:#c4c6d3;text-align:left;font-size:11px}.network-tile span{white-space:nowrap}.network-tile svg{margin-left:auto;opacity:0;color:#a99aff;flex-shrink:0}.network-tile.selected{border-color:#8274cc;background:#1a192b;color:#fff}.network-tile.selected svg{opacity:1}.network-tile:hover{border-color:#6e61b0}.security-section{display:flex;gap:15px;align-items:flex-start;width:min(100%,650px);margin:0 auto 55px;padding:20px 22px;border:1px solid #2a2d3c;border-radius:17px;background:#12141eaa}.security-icon{width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;border:1px solid #2e514f;border-radius:13px;background:#17302f;color:#7be1cb}.security-section h3{font:600 14px 'Space Grotesk',sans-serif;margin:2px 0 7px}.security-section p{margin:0;color:#9699ac;font-size:11px;line-height:1.7}
 footer{position:relative;z-index:1;max-width:1200px;margin:auto;padding:23px 28px 30px;border-top:1px solid #ffffff0c;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#6d7185;font-size:10px}.footer-brand .brand-mark{transform:scale(.8) skew(-17deg)}.footer-brand .brand-name{font-size:15px}
 @media(max-width:800px){.topbar{height:72px;padding:0 18px;gap:15px}.nav-links{gap:17px}.nav-links a{font-size:12px}.header-actions{margin-left:auto}.network-button{padding:0 10px}.connect-button{padding:0 11px}.network-grid{grid-template-columns:repeat(3,1fr)}footer{flex-wrap:wrap}.footer-brand{width:100%}}
-@media(max-width:600px){.topbar{gap:10px}.brand-name{font-size:16px}.brand-mark{width:24px}.nav-links{display:none;position:absolute;top:62px;left:14px;right:14px;padding:15px;background:#171925;border:1px solid #303246;border-radius:13px}.nav-links.nav-open{display:flex;justify-content:space-around}.header-actions{gap:6px}..network-button{
-  font-size:12px;
-  gap:6px;
-  width:auto;
-  min-width:44px;
-  justify-content:center;
-  position:relative;
-  z-index:20;
-  touch-action:manipulation;
-}
+@media(max-width:600px){
 
-.network-wrap{
-  position:relative;
-  z-index:20;
-}
+.topbar{gap:10px}
 
-.network-menu{
-  z-index:100;
-}.network-button svg{display:none}.network-button i{width:10px;height:10px}.connect-button{font-size:0;width:41px;justify-content:center;padding:0}.connect-button svg{width:17px}.mobile-toggle{display:block;padding:7px}.hero{padding:52px 0 27px}.hero h1{letter-spacing:-2.5px}.hero p{max-width:300px;margin:auto;font-size:12px}main{padding:0 14px}.swap-card{padding:15px;border-radius:21px}.amount-row input,.output-amount{font-size:28px}.network-grid{grid-template-columns:repeat(2,1fr)}.network-section{padding-top:50px}.network-section h2{font-size:22px}.security-section{padding:16px;margin-bottom:38px}footer{padding:20px 18px;gap:12px}.footer-brand{width:100%}}
+.brand-name{font-size:16px}
+
+.brand-mark{width:24px}
+
+.nav-links{display:none;position:absolute;top:62px;left:14px;right:14px;padding:15px;background:#171925;border:1px solid #303246;border-radius:13px}
+
+.nav-links.nav-open{display:flex;justify-content:space-around}
+
+.header-actions{gap:6px}
+
+.network-wrap{position:relative;z-index:20}
+
+.network-button{font-size:12px;gap:6px;width:auto;min-width:44px;justify-content:center;position:relative;z-index:20;touch-action:manipulation}
+
+.network-menu{z-index:100}
+
+.network-button svg{display:none}
+
+.network-button i{width:10px;height:10px}
+
+.connect-button{font-size:0;width:41px;justify-content:center;padding:0}
+
+.connect-button svg{width:17px}
+
+.mobile-toggle{display:block;padding:7px}
+
+.hero{padding:52px 0 27px}
+
+.hero h1{letter-spacing:-2.5px}
+
+.hero p{max-width:300px;margin:auto;font-size:12px}
+
+main{padding:0 14px}
+
+.swap-card{padding:15px;border-radius:21px}
+
+.amount-row input,.output-amount{font-size:28px}
+
+.network-grid{grid-template-columns:repeat(2,1fr)}
+
+.network-section{padding-top:50px}
+
+.network-section h2{font-size:22px}
+
+.security-section{padding:16px;margin-bottom:38px}
+
+footer{padding:20px 18px;gap:12px}
+
+.footer-brand{width:100%}
+   }   
