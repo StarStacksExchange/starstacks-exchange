@@ -88,7 +88,21 @@ export default function App() {
       </nav>
       <div className="header-actions">
         <div className="network-wrap">
-          <button className="network-button" onClick={()=>setNetworkOpen(!networkOpen)}><i style={{background:network.color}}></i>{network.name}<ChevronDown size={15}/></button>
+        <button
+  type="button"
+  className="network-button"
+  aria-expanded={networkOpen}
+  aria-haspopup="true"
+  onClick={(e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setNetworkOpen((open) => !open);
+  }}
+>
+  <i style={{ background: network.color }}></i>
+  {network.name}
+  <ChevronDown size={15} />
+</button>
           {networkOpen && <div className="network-menu">{NETWORKS.map(n=><button key={n.id} onClick={()=>switchNetwork(n)}><i style={{background:n.color}}></i>{n.name}{n.id===chainId&&<Check size={15}/>}</button>)}</div>}
         </div>
         <button className="connect-button" onClick={connectWallet}><Wallet size={16}/>{account ? `${account.slice(0,6)}…${account.slice(-4)}` : "Connect wallet"}</button>
