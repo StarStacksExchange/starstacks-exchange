@@ -83,7 +83,11 @@ export default async function handler(req, res) {
     const data = await response.json();
 
     if (!response.ok) {
-      console.error("Uniswap quote request failed:", response.status);
+      console.error("Uniswap quote request failed:",{
+
+    status: response.status,
+
+    response: data,
 
       return res.status(response.status).json({
         error:
