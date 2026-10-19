@@ -94,10 +94,11 @@ export default function App() {
   aria-expanded={networkOpen}
   aria-haspopup="true"
   onClick={(e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setNetworkOpen((open) => !open);
-  }}
+    alert("NETWORK BUTTON CLICKED");
+
+  setNetworkOpen(true);
+
+}}
 >
   <i style={{ background: network.color }}></i>
   {network.name}
